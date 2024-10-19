@@ -1,20 +1,18 @@
 package com.hubService.Model;
 
+import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Embeddable
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class PersonalInfo {
-    private  String email;
-    private String firstName;
-    private String lastName;
+public class Address {
     private String streetAddress;
+    private String appSuiteNumber;
     private String city;
     private String state;
-    private Integer postalcode;
-    private Double monthlyHousePayment;
-
+    private String postalCode;
 }
