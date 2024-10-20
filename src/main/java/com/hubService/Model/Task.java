@@ -1,6 +1,9 @@
 package com.hubService.Model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,7 +12,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class task {
+public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long taskId;
+    private String applicationId;
+    private String parentTask;
     private String taskName;
     private String childTask;
     private Boolean childTaskStatus;

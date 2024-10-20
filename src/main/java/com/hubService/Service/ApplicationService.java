@@ -1,9 +1,6 @@
 package com.hubService.Service;
 
-
-
 import com.hubService.dto.ApplicationDTO;
-
 import java.util.Map;
 
 public interface ApplicationService {

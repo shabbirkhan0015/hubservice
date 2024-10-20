@@ -1,10 +1,9 @@
 package com.hubService.Service;
 
 
-import com.hubService.Service.impl.TaskServiceImpl;
-import com.hubService.dto.ApplicationDTO;
+import com.hubService.Model.Task;
 
 public interface TaskService  {
 
-    public String createTask(String name);
+    public Task createTask(String applicationId, Task task);
 }
